@@ -2,12 +2,14 @@ const express = require('express');
 
 const app = express();
 
+const PORT = process.env.PORT || 5000;
+
 app.listen(PORT, () => {
   console.log(`Example app listening on ${PORT}!`);
 });
 
-app.get('/', (request, response) => {
-  response.sendFile(__dirname + '/portfolio.html');
-});
+app.use(express.static(__dirname + '/public'));
 
-const PORT = process.env.PORT || 5000;
+app.get('/', (request, response) => {
+  response.sendFile(__dirname + '/public/portfolio.html');
+});
