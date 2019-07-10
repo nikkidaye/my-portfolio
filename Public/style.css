@@ -120,11 +120,11 @@ body {
   border-radius: 50%;
 }
 
-body {
+#backgroundpic {
+  width: 50rem;
+  height: 80rem;
   background-repeat: no-repeat;
-  background-size: auto;
-  /* background: linear-gradient(to bottom right, #fffff  49%, #ccffcc 100%); */
-  background-image: url(/home/techhire/Downloads/teal.jpg);
+  background-position: center;
 
 }
 
